@@ -30,7 +30,7 @@ class String
     sentence_array = self.split(/[.?!]/)
     count = sentence_array.length 
     sentence_array.each do |sentence|
-      if sentence = ""
+      if sentence == ""
         count -= 1 
       end 
     end
