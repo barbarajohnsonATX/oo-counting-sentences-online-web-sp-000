@@ -27,9 +27,12 @@ class String
   end
 
   def count_sentences
-    count = self.split(/[.?!]/).length 
-    if 
-    
-
-  end
+    sentence_array = self.split(/[.?!]/)
+    count = sentence_array.length 
+    sentence_array.each do |sentence|
+      if sentence = ""
+        count -= 1 
+      end 
+    end
+    return count 
 end
