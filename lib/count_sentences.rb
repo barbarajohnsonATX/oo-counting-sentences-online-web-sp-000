@@ -35,4 +35,5 @@ class String
       end 
     end
     return count 
+  end 
 end
